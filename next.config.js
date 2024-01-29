@@ -6,6 +6,11 @@ const nextConfig = {
             { hostname: 'lh3.googleusercontent.com' } // Added comma here
         ]
     },
+    experimental:{
+        serverActions:{
+            allowedOrigins:['my-proxy.com', '*my-proxy.com']
+        }
+    }
 
 }
 
