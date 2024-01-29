@@ -11,13 +11,8 @@ export const authOption: NextAuthOptions = {
     adapter:PrismaAdapter(prisma) as Adapter,
     providers: [
         GoogleProvider({
-<<<<<<< HEAD
             clientId: process.env.GOOGLE_CLIENT_ID!,
             clientSecret:process.env.GOOGLE_CLIENT_SECRET!,
-=======
-            clientId:env.GOOGLE_CLIENT_ID,
-            clientSecret:env.GOOGLE_CLIENT_SECRET,
->>>>>>> 268274ee6cba2e8208465b2c71856cbaf7ec3b11
         })
     ],
     callbacks:{
